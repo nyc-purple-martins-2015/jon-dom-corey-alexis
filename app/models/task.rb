@@ -13,6 +13,7 @@ class Task < ActiveRecord::Base
       return "[ ] #{task_description}"
     else
       return "[X] #{task_description}"
+    end
   end
 
   def self.delete(id)
