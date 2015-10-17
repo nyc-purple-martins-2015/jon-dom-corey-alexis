@@ -20,7 +20,7 @@ when "add"
 when "complete"
   p Task.find(ARGV[1]).complete
 when "delete"
-  Task.delete()
+  Task.delete(ARGV[1])
 else
   p Task.last
 end
